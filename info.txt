@@ -21,3 +21,10 @@ npx nx run todos:build
 npx nx run-many --target=build --projects=todos,api
 
 nx lint todos --with-deps
+
+npm run affected:apps
+npm run affected:libs
+
+# The following are equivalent
+npx nx affected --target=build
+npx nx affected:build
